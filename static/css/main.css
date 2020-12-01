@@ -1,0 +1,200 @@
+/* CSS Document */
+body{
+	background: url("../images/back_line.gif");
+	padding: 0;
+	margin: 0;
+}
+a{
+	color: #FFFFFF;
+}
+a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.form-control option{
+	border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff !important;
+}
+
+.header{
+	background:#468B38; 
+	width: auto;
+	height:100px;
+	margin:auto;
+	padding: 0;
+}
+.header_logo{
+	float: left;
+	margin-left: 10%;
+}
+.header_logo img{
+	margin:auto;
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+}
+
+.daohangcaidan{
+	border-radius:10px;
+	margin-top: 30px;
+	margin-left:10%;
+	width: 80%;
+	height: 50px;
+	background:#468B38;
+	//overflow: hidden;
+	padding-left: 10%;
+}
+
+.caidanxuanxiang{
+	margin-right: 20px;
+	margin-top:-5px;
+	border-radius: 20px 20px 20px 20px;
+	float: left;
+	width:200px;
+	height: 50px;
+	background:#468B38; 
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 30px;
+	cursor:pointer;
+	//box-shadow:1px 0px 50px 1px #346729;
+}
+
+.caidanxuanxiang:hover{
+	transform: translate(0px,-10px);
+	box-shadow:0px 1px 30px 1px rgba(0,0,0,.2);
+	background:#4d993d;
+}
+
+.caidanxuanxiang_on{
+	margin-right: 20px;
+	margin-top:-20px;
+	border-radius: 20px 20px 20px 20px;
+	float: left;
+	width:200px;
+	height: 50px;
+	background-image: linear-gradient(#54A743, #468B38);
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 30px;
+	box-shadow:0px 5px 10px 3px rgba(0,0,0,0.3);
+}
+
+.midbody{
+	width: 80%;
+	height: 600px;
+	margin-left: 10%;
+	margin-top: 10px;
+	background:#E2F1DF;
+	padding: 2%;
+	border-radius: 20px;
+}
+
+.xinxi{
+	border-radius: 10px;
+	background: #F0F8EE;
+	width: 39%;
+	height: 100%;
+	float: left;
+	margin-right: 1%;
+}
+
+.xinxi_touxiang{
+	width: 30%;
+	height: 25%;
+	min-width: 120px;
+	max-width: 130px;
+	margin-top:5%;
+	margin-left: 35%;
+	margin-bottom: 5%;
+	border-radius: 20px;
+	background: #FFFFFF;
+	padding: 10px;
+	overflow: hidden;
+	align-items: center;
+}
+
+.xinxi_touxiang img{
+	width: 100%;
+	min-width: 100px;
+	height:auto;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.xinxi_xiangxi{
+	overflow: hidden;
+	height: 65%;
+	width: 90%;
+	margin-left: 5%;
+	background: #FFFFFF;
+	border-radius: 10px;
+	padding-top: 5px;
+	padding-left: 8px;
+}
+
+.liebiao{
+	overflow: hidden;
+	
+}
+
+.liebiao input{
+	outline: 0;
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.tongzhi{
+	float: left;
+	border-radius: 10px;
+	background: #F0F8EE;
+	width: 60%;
+	height: 100%;
+}
+
+.footer_banner{
+	margin-top:5px;
+	width: 100%;
+	height: 100px;
+	background:#468B38; 
+}
+
+.footer_text{
+	font-size:10px;
+	text-align:center;
+	margin:auto;
+	position:relative;
+	top:60%;
+}
+
+@media screen and (max-width: 1600px){
+	.daohangcaidan{
+		padding-left:15%;
+	}
+}
+
+@media screen and (max-width: 1400px){
+	.daohangcaidan{
+		height: 100px;
+		padding-left:10%;
+	}
+}
+@media screen and (max-width: 850px){
+	.daohangcaidan{
+		height: 150px;
+	}
+}
+
+/*table pass or notpass*/
+.pass
+{
+	color:#468B38;
+}
+
+.notpass
+{
+	color:#DC143C;
+}
