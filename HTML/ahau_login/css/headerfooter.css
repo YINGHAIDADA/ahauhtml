@@ -1,0 +1,83 @@
+.header{
+    height: 114px;
+}
+.container{
+    width: 100%;
+}
+.container{
+	position: absolute;
+	top: 114px;bottom: 137px;
+	}
+.footer{
+	position: absolute;
+	width: 100%;bottom: 0;
+	}
+.banner{
+	height: 100%;
+}
+
+.footer{
+    height: 62px;
+    padding: 20px;
+    color: #333;
+    background: url("../images/back_line.gif");
+}
+.login{
+    position: absolute;
+    top:50px;
+    right:200px;
+    z-index: 2;
+}
+.login_seen{
+    background: rgb(101,101,101);
+    filter:Alpha(opacity=90);
+    background: rgba(50,50,50,0.5);
+    width: 330px;
+    padding: 20px 50px;
+    border-radius: 25px;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.banner-see{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    min-height: 400px;
+}
+.banner-pic-lists{
+    overflow: auto;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+}
+.banner-pic-list{
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.banner-pic-list img{
+    display: block;
+    width: 100%;
+    min-height:400px;
+}
+.banner-pic-list div{position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: auto;margin: auto;}
+
+@media screen and (min-height: 950px){
+    .container{
+        background: white;
+        padding-top: 63px;
+    }
+    .footer{padding-top:90px;
+    }
+}
+@media screen and (min-height: 750px)and (max-height: 880px){
+    .container{
+        /*background: white;*/
+        padding-top: 50px;
+    }
+}
+

@@ -1,0 +1,388 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Nat Liu (natcube@gmail.com)
+ * @date    2016-07-22 17:18:59
+ * @version 2016-07-22 17:18:59
+ */
+
+body, .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+	background: #fff;
+}
+body {
+	overflow-x: auto;
+}
+body.sidebar-mini,body.sidebar-mini .wrapper {
+	background: #fff;
+}
+.wrapper {
+	
+}
+
+.content-wrapper, .right-side {
+	background: #fff;
+}
+
+a { color: #af121c; -webkit-transition: color 0.2s;
+-o-transition: color 0.2s;
+transition: color 0.2s;}
+a:hover {color: #af121c; cursor: pointer;}
+
+.app-header{
+}
+.app-mini-header {
+}
+.header-wrapper {
+	background-color: #0381bd;
+	color: #fff;
+}
+.app-mini-header .header-wrapper {
+	background:none;
+}
+.app-header-inner {
+	height: 91px;
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+}
+.app-mini-header .app-header-inner {
+	height: 45px;
+}
+
+.app-header-logo {
+	width: 255px;
+	height: 91px;
+	background: url(../images/logo.png) no-repeat left center;
+	cursor: pointer;
+	float: left;
+}
+
+.app-mini-header .app-header-logo {
+	width: 150px;
+	height: 45px;
+	background: #32404e url(../images/mini_header_logo.png) no-repeat 50%;
+}
+
+.app-header-menu {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.app-header-menu li{
+	float: left;
+}
+
+.app-header-menu li a.menu-item {
+	display: block;
+	height: 91px;
+	padding: 10px 25px;
+	text-align: center;
+	color: #fff;
+	transition: all ease-out 0.3s;
+	opacity: 0.8;
+}
+
+.app-header-menu li.hover a.menu-item{
+	text-decoration: none;
+	background: #016291;
+	border-bottom: 4px solid #15a4fa;
+	transition: all ease-out 0.2s;
+	opacity: 1;
+}
+
+.app-header-menu li.cur a.menu-item,.app-header-menu li.cur a.menu-item:hover {
+}
+
+.app-header-menu li .menu-item i {
+	font-size: 28px;
+	display: block;
+	color: #fff;
+	height: 42px;
+	line-height: 42px;
+	-webkit-transition: transform 0.2s;
+	-o-transition: transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.app-header-menu li a.menu-item:hover i {
+}
+
+.app-header-menu li .menu-item i.fa-home {
+	font-size: 36px;
+}
+.app-header-menu li .menu-item span {
+	display: block;
+	font-size: 16px;
+	height: 23px;
+	line-height: 23px;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.app-user {
+	float: left;
+	height: 91px;
+	position: relative;
+	padding:0 20px;
+}
+
+.app-mini-header .app-user { 
+	height: 45px;
+}
+
+.app-user .user-box {
+	float: left;
+	display: inline-block;
+	height: 91px;
+}
+
+.app-mini-header .app-user .user-box{
+	height: 45px;
+}
+
+.app-user .dropdown-menu {
+	margin: 0;
+	width: 240px;
+	left: auto;
+	right: 0;
+	padding: 0;
+}
+
+.app-user .dropdown-menu .user-header {
+    height: 92px;
+    padding: 10px;
+    background-color: #d02a34;
+    position: relative;
+}
+
+.app-user .dropdown-menu .user-header img {
+    height: 72px;
+    width: 72px;
+    border: 3px solid;
+    border-color: transparent;
+    border-color: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.app-user .dropdown-menu .user-header p {
+    color: #fff;
+    color: rgba(255,255,255,0.8);
+    font-size: 18px;
+    position: absolute;
+	top: 23px;
+    left: 110px;
+}
+
+.app-user .dropdown-menu .user-footer a {
+	display: block;
+	line-height: 32px;
+	text-align: center;
+	color: #fff;
+	background: #32404d;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.app-user .dropdown-menu .user-footer a:hover {
+	background: #434f5a;
+}
+
+.app-user .dropdown-menu .user-header p small {
+    display: block;
+    font-size: 12px;
+}
+
+.app-user .dropdown-menu .user-body {
+    padding: 15px;
+    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #dddddd;
+}
+
+.app-user .user-info {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	color: #c5c5c5;
+	margin-top: 25px;
+}
+
+.app-mini-header .app-user .user-info{
+	height: 32px;
+	line-height: 32px;
+	margin-top: 6px;
+}
+
+.app-user .user-avatar{
+	width: 40px;
+	overflow: hidden;
+	border-radius: 200px;
+	text-align: center;
+}
+
+.app-mini-header .app-user .user-avatar{
+	width: 32px;
+}
+
+.app-user .user-avatar img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+
+.app-user a.user-info:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.app-user .user-nick {
+	margin-left: 10px;
+}
+
+.app-user .user-cut {
+	padding: 0 5px;
+}
+
+.app-user .user-logout {
+	color: #f5ca3f;
+}
+
+.app-user .user-logout:hover {
+	color: #ffbe84;
+}
+
+.app-wrapper {
+	background-color: #fff;
+	padding: 0 15px;
+}
+
+.app-wrapper, .app-footer-inner, .wrapper-inner {
+	width: 76%;
+	margin: 0 auto;
+	max-width: 1400px;
+	overflow: hidden;
+}
+
+.footer-wrapper {
+	background-color: #5c5c5c;
+	color: #fff;
+}
+.app-footer {
+	background-color: #5c5c5c;
+}
+.app-mini-footer {
+
+}
+.app-footer-inner {
+	position: relative;
+	height: 106px;
+	background: url(../images/footer_logo.png) no-repeat left 50%;
+}
+.app-mini-footer .app-footer-inner {
+	height: 51px;
+	background: none;
+}
+.app-copyright {
+	line-height: 23px;
+	padding: 30px 0;
+	text-align: right;
+	color: #cacaca;
+	font-size: 13px;
+	margin: 0;
+}
+
+.app-mini-footer .app-copyright{
+	padding: 14px 0;
+	text-align: center;
+}
+
+.app-copyright p {margin:0;}
+
+.app-admin-header .logo img{
+	height: 40px;
+	margin: 5px;
+	vertical-align: top;
+}
+.sidebar-mini .main-header .navbar{
+	background: #32404e;
+}
+.sidebar-mini .main-header .logo {
+	background: #32404e;
+	padding: 0 10px;
+}
+
+.sidebar-mini .main-header .logo:hover,.sidebar-mini .main-header .navbar .sidebar-toggle:hover{
+	background: #25303c;
+}
+.sidebar-mini .main-header li.user-header{
+	background: #d02a34;
+}
+
+@media (max-width: 1299px) {
+	.app-header-inner {
+		width: auto;
+	}
+}
+
+@media (max-width: 1199px) {
+	.app-header-menu li a.menu-item {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: 1099px) {
+	.app-header-menu li a.menu-item {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media (max-width: 940px) {
+	.app-wrapper, .app-footer-inner, .wrapper-inner {
+		width: auto;
+		margin: 0 6px;
+	}
+	.app-header-inner{
+		max-width: 100%;
+	}
+}
+ul.app-header-menu li.cur a {
+    text-decoration: none;
+    background: #649f58;
+	transition: all ease-out 0.2s;
+    height: 85px;
+    opacity: 1;
+}
+.app-header-menu li{
+    overflow: hidden;
+}
+.app-header-menu li a.menu-item{
+    opacity: 1;
+}
+.app-header-menu li .menu-item i,
+.app-header-menu li .menu-item span{
+    display: block;
+    float: left;
+}
+.app-header-menu li .menu-item i{
+    margin-top: 13px;
+    margin-right: 5px;
+}
+.app-header-menu li .menu-item span{
+    margin-top: 24px;
+}
+.app-user,
+.app-user .user-box{
+    height: 85px;
+}
+.app-user .user-info{
+    margin-top: 25px;
+}
+.app-header-inner{
+    min-width: 1152px;
+    width: 80%;
+}
