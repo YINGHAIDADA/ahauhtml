@@ -1,3 +1,6 @@
+__Author__ = "YINGHAI"
+__Email__ = "pyj2897022134@gmail.com"
+
 from flask import Flask, url_for, redirect, flash
 from flask import render_template, request
 from datetime import timedelta
