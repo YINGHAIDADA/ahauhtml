@@ -44,7 +44,7 @@ a:hover{
 	height: 50px;
 	background:#468B38;
 	//overflow: hidden;
-	padding-left: 10%;
+	padding-left: 15%;
 }
 
 .caidanxuanxiang{
@@ -170,21 +170,27 @@ a:hover{
 	top:60%;
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1700px){
 	.daohangcaidan{
-		padding-left:15%;
+		padding-left:12%;
+		height: 100px;
 	}
 }
 
 @media screen and (max-width: 1400px){
 	.daohangcaidan{
-		height: 100px;
+
 		padding-left:10%;
 	}
 }
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1000px){
 	.daohangcaidan{
 		height: 150px;
+	}
+}
+@media screen and (max-width: 800px){
+	.daohangcaidan{
+		height: 200px;
 	}
 }
 
