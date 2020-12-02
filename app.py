@@ -18,5 +18,9 @@ def home():
 
     return render_template("index.html")
 
+@app.route("/xinxi",methods=["GET","POST"])
+def xinxi():
+    return render_template("xinxi.html")
+
 if __name__ == '__main__' :
     app.run()
