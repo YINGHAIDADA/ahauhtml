@@ -1,0 +1,377 @@
+	body {
+    background: #EEEEEE;
+}
+ul,ol,p,h1,h2,h3,h4,h5,h6,dl,dd{margin:0;padding:0;list-style:none;}
+a:hover{cursor: pointer;text-decoration: none;}
+.clear {
+    clear: both;
+}
+.container {
+    width: 80%;
+    padding: 0;
+    /*min-width: 1152px;*/
+    margin-bottom: 30px;
+}
+.tips{
+    margin-top: 10px;
+    background: #fff;
+    padding: 0 10px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.tips span{
+    /*display: inline-block;*/
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.laba{
+    width: 20px;height: 40px;
+	float:left;
+
+}
+.laba img{
+    width: 20px;height: 20px;
+}
+.rightTips{
+    float: right;
+}
+.leftTips{
+	float:left; 
+}
+.box{
+    overflow: hidden;
+}
+.boxRight{
+    float: right;
+    width: 340px;
+}
+.boxRight>div{
+    padding: 0 15px 15px 15px;
+    background: #fff;
+}
+.boxLeft{
+    float: left;
+    width: calc(100% - 350px);
+    
+}
+.tabInfo{
+    padding: 10px 20px 20px 20px;
+    background: #fff;
+}
+.commonly{
+    margin-top: 10px;
+}
+.title{
+    margin-bottom: 10px;
+    border-bottom: 4px solid rgb(221, 221, 221);
+    height: 50px;
+    position: relative;
+}
+.title li{
+    float: left;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 5px;
+    line-height: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.title li.active{
+     border-bottom: 4px solid rgb(71, 139, 54);
+}
+.title li:hover{
+    cursor: pointer;
+}
+
+.listInfo span{
+    width: 80%;
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+}
+.listInfo span.time{
+    float: right;
+    width: 100px;
+    text-align: right;
+    color: #000;
+}
+.listInfo li{
+    line-height: 30px;
+    overflow: hidden;
+    padding: 0 5px;
+    /*background: #F9F9F9;*/
+}
+.listInfo li:nth-child(2n){
+    background: #fff;
+}
+.riqi,
+.lunbo,
+.server,
+.save,
+.identity,
+.Online{
+    margin-top: 10px;
+    background: #fff;
+    padding: 0 20px 10px 20px;
+}
+.lunbo{
+    padding: 0;
+}
+.lists{overflow: hidden;}
+.lists .list{
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+}
+.listPad{
+    border:1px solid #eeeeee;
+    height: 115px;
+    padding: 15px;
+}
+.divImg{
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+.divImg img{
+    width: 55px;
+    height: 55px;
+}
+.listdetail{
+    float: left;
+    /*margin-left: 10px;*/
+    font-size: 14px;
+    /*width: calc(100% - 70px);*/
+    width: 60%;
+}
+.listdetail p{
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.listdetail span{
+    color: #C4C4C4;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.pinjia{
+    margin-top: 10px;
+    color: #C4C4C4;
+}
+.pinjia span{
+    display: inline-block;
+}
+.starspro{
+    margin-right: 10px;
+    width: 40%;
+    text-align: center;
+}
+.starspro em {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url(../images/star.png) no-repeat 0 -15px;
+}
+.add{
+    text-align: center;
+    line-height: 90px;
+    color: #C7C7C7;
+    font-size: 22px;
+}
+.add:hover{
+    cursor: pointer;
+}
+.add .addBtn{
+    color: #333;
+}
+.serverList a{
+    display: inline-block;
+    color: #000;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 15px;
+}
+.search{
+    margin-top: 15px;
+}
+.serverList a.bod{
+    font-weight: bold;
+    margin-right: 5px;
+    width: auto;
+}
+.teacherInfo{
+    border: 1px solid transparent;
+    /*border-bottom: 1px solid #D6D6D6;*/
+    background: #fff;
+}
+.teacherInfo>div.line{
+    height: 1px;
+    background: #D6D6D6;
+    margin-top: 25px;
+}
+.teacherInfo>div{
+    text-align: center;
+    color: #468B38;
+    margin-top: 5px;
+}
+.teacherInfo>div.teaImg{
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.teacherInfo>div.teaName{
+    font-size: 16px;
+    color: #000;
+    margin-top: 20px;
+}
+.teaImg img{
+    width: 100px;
+    height: 100px;
+	border-radius: 50px;
+}
+.loginTime,
+.loginIp{
+    padding-top: 10px;
+}
+.weekArrange,
+.myEmail,
+.myRemind,
+.leadership{
+    background: #fff;
+    margin-top: 10px;
+}
+.leaderName li{
+    line-height: 30px;
+    height: 30px;
+    background: #fff;
+    padding: 0 10px 0 15px;
+    color: #000;
+   
+}
+.myEmail .more{
+    color: #45A014;
+}
+.leaderName li:nth-child(2n){
+    background: #F9F9F9;
+}
+.leaderName li span{
+    display: inline-block;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.leaderName li span.Lname{
+    width: 25%;
+    text-align: left;
+}
+.leaderName li span.Lzhiwu{
+    width: 50%;
+    text-align: left;
+}
+.leaderName li span.Lstate{
+    width: 25%;
+}
+.leaderName .header{
+    font-weight: bold;
+}
+.remindInfo{
+    color: #000;
+    padding: 5px 0;
+}
+.remindInfo span:first-child{
+    margin-right: 5px;
+}
+.emailInfo span{
+    display: inline-block;
+}
+.emailInfo>div{
+    margin-top: 10px;
+}
+.emailInfo span:last-child{
+    float: right;
+    color: #ADADAD;
+
+}
+.riliList > div {
+    margin-top: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.riliList > div span:first-child {
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background:  #45A014;
+    border-radius: 5px;
+}
+.huiyi .con {
+    width: 270px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(39, 39, 39);
+    overflow: hidden;
+}
+.addRecode {
+    height: 30px;
+    margin-top: 10px;
+}
+.addRecode .addWord {
+    height: 30px;
+    line-height: 30px;
+    color: rgb(146, 146, 146);
+    display: block;
+    float: left;
+}
+.addRecode .addBtn {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    background: #C7C7C7;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+.tab2,
+.tab3,
+.tab4,
+.tab5,
+.tab6{
+    display: none;
+}
+.remindInfoImg{
+    display: none;
+}
+.title .more{
+        position: absolute;
+        top: 17px;
+        right: 0;
+        color: #333;
+    }
+ .boxRight>div.loginIp{
+    padding-bottom: 40px;
+ }
+ .arrangeList{
+    line-height: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+ }

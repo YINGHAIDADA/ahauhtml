@@ -16,9 +16,15 @@ app.config['DEBUG'] = True
 
 # -------------配置文件-----------
 
-
+# -------------路由定位页面------------
 @app.route("/", methods=["GET", "POST"])#指定接口访问的路径，以及请求方法
 def home():
+
+    return render_template("index.html")
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
     if request.method == 'POST':
         error = None
         u = request.form['username']
@@ -28,7 +34,7 @@ def home():
         else:
             error = '用户名或密码错误'
         flash(error)
-    return render_template("index.html")
+    return redirect('/')
 
 
 @app.route("/xinxi", methods=["GET", "POST"])
@@ -54,6 +60,8 @@ def zongce():
 @app.route("/liuxin")
 def liuxin():
     return render_template("liuxin.html")
+
+# -------------路由定位页面-------------
 
 
 if __name__ == '__main__':
