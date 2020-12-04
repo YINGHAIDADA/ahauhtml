@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人信息</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/app-style.css" />
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header_logo">
+			<img src="images/logo.png" alt="" />
+		</div>
+	</div>
+	<div class="daohangcaidan">
+		<a href="m_home.html"><div class="caidanxuanxiang">首页</div></a>
+		<a href="m_zhps.html"><div class="caidanxuanxiang">综测评审</div></a>
+		<a href="m_fbgs.html"><div class="caidanxuanxiang">发布公示</div></a>
+		<a href="m_fbgg.html"><div class="caidanxuanxiang">发布公告</div></a>
+		<div class="caidanxuanxiang_on">回复留信</div>
+	</div>
+	<div class="midbody">
+	
+	<div class="card" style="overflow:auto; height:500px">
+		<table class="table table-hover">
+    <thead>
+      <tr>
+        <th style="font-size:30px; width:20%">姓名</th>
+        <th style="font-size:30px; width:20%">邮箱</th>
+        <th style="font-size:30px; width:20%">号码</th>
+		<th style="font-size:30px; width:30%">意见</th>
+		<th style="font-size:30px; width:10%"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>165454@qq.com</td>
+        <td>10086</td>
+		<td><textarea readonly class="form-control" rows="3" style="resize:none;overflow:auto;">111111111111111111111111111111111</textarea></td>
+		<td><button type="button" class="btn btn-primary" style="font-size:10px"  data-toggle="modal" data-target="#myModal">回复</button></td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>165454@qq.com</td>
+        <td>1004566</td>
+		<td><textarea readonly class="form-control" rows="3" style="resize:none;overflow:auto;">2222222222222222222222222222222222222</textarea></td>
+		<td><button type="button" class="btn btn-primary" style="font-size:10px"  data-toggle="modal" data-target="#myModal">回复</button></td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>165454@qq.com</td>
+        <td>10086</td>
+		<td><textarea readonly class="form-control" rows="3" style="resize:none;overflow:auto;">33333333333333333333333333333333333333333333</textarea></td>
+		<td><button type="button" class="btn btn-primary" style="font-size:10px"  data-toggle="modal" data-target="#myModal">回复</button></td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>165454@qq.com</td>
+        <td>10086</td>
+		<td><textarea readonly class="form-control" rows="3" style="resize:none;overflow:auto;">44444444444444444444444444444444444444444</textarea></td>
+		<td><button type="button" class="btn btn-primary" style="font-size:10px"  data-toggle="modal" data-target="#myModal">回复</button></td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>165454@qq.com</td>
+        <td>10086</td>
+		<td><textarea readonly class="form-control" rows="3" style="resize:none;overflow:auto;">5555555555555555555555555555555555555555</textarea></td>
+		<td><button type="button" class="btn btn-primary" style="font-size:10px"  data-toggle="modal" data-target="#myModal">回复</button></td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>165454@qq.com</td>
+        <td>10086</td>
+		<td><textarea readonly class="form-control" rows="3" style="resize:none;overflow:auto;">66666666666666666666666666666666666666</textarea></td>
+		<td><button type="button" class="btn btn-primary" style="font-size:10px"  data-toggle="modal" data-target="#myModal">回复</button></td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>165454@qq.com</td>
+        <td>10086</td>
+		<td><textarea readonly class="form-control" rows="3" style="resize:none;overflow:auto;">666666666667777777777777777777777777777</textarea></td>
+		<td><button type="button" class="btn btn-primary" style="font-size:10px"  data-toggle="modal" data-target="#myModal">回复</button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+		
+    </div>
+    
+        <!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color:rgb(0, 0, 0);">
+             <!-- 模态框头部（Modal） -->
+			<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color: black;">
+					回复留信
+				</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				
+            </div>
+            <form>
+             <!-- 模态框中间（Modal） -->
+			<div class="modal-body card">
+                <textarea rows="8" class="form-control" style="width: 100%;resize:none;"></textarea>
+            </div>
+             <!-- 模态框尾部（Modal） -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<button type="submit" class="btn btn-primary">
+					提交更改
+				</button>
+            </div>
+        </form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+	
+	<div class="footer_banner">
+		<div class="footer_text">
+		@CopyRight 安徽农业大学-18计科6班-潘亚杰18115296-2897022134@qq.com
+		</div>
+	</div>
+
+</body>
+</html>
