@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人信息</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/app-style.css" />
+<link rel="stylesheet" href="css/main.css" />
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="js/echarts.min.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header_logo">
+			<img src="images/logo.png" alt="" />
+		</div>
+	</div>
+	<div class="daohangcaidan">
+		<a href="t_home.html"><div class="caidanxuanxiang">首页</div></a>
+		<a href="t_shgs.html"><div class="caidanxuanxiang">审核公示</div></a>
+		<a href="t_scxz.html"><div class="caidanxuanxiang">上传下载</div></a>
+		<div class="caidanxuanxiang_on">数据统计</div>
+		
+	</div>
+	<div class="midbody">
+	
+	<div id="sjtjcaidan" class="card" style="padding:10px;border-radius:20px;width: 18%;float: left;height: 100%">
+		<button type="submit" id="sjtjcaidan_ys1" class="card sjtjcaidan_ys"><span style="margin:auto">四六级成绩分布</span></button>
+		<button type="submit" id="sjtjcaidan_ys2" class="card sjtjcaidan_ys_on"><span style="margin:auto">绩点分布</span></button>
+		<button type="submit" id="sjtjcaidan_ys3" class="card sjtjcaidan_ys">页面3</button>
+		<button type="submit" id="sjtjcaidan_ys4" class="card sjtjcaidan_ys">页面4</button>
+	</div>
+
+	<div id="sjtjym1" class="card" style="padding:10px;border-radius:20px;width: 80%;float: right;display: none;height: 100%">
+		<div id="chart1" style="width: 900px;height:600px;"></div>
+
+	</div>
+	<div id="sjtjym2" class="card" style="padding:10px;border-radius:20px;width: 80%;float: right;display: block;height: 100%">
+		<div id="chart2" style="width: 1000px;height:550px;"></div>
+	</div>
+	<div id="sjtjym3" class="card" style="padding:10px;border-radius:20px;width: 80%;float: right;display: none">
+
+	</div>
+	<div id="sjtjym4" class="card" style="padding:10px;border-radius:20px;width: 80%;float: right;display: none">
+
+	</div>
+		
+	</div>
+	
+	<div class="footer_banner">
+		<div class="footer_text">
+		@CopyRight 安徽农业大学-18计科6班-潘亚杰18115296-2897022134@qq.com
+		</div>
+	</div>
+	
+	<script>
+		$(document).ready(function(){
+			var ym1 = document.getElementById("sjtjym1");
+			var ym2 = document.getElementById("sjtjym2");
+			var ym3 = document.getElementById("sjtjym3");
+			var ym4 = document.getElementById("sjtjym4");
+			
+  			$('#sjtjcaidan_ys1').click(function(){
+
+				ym1.style.display ="block";
+				ym2.style.display ="none";
+				ym3.style.display ="none";
+				ym4.style.display ="none";
+
+				$("#sjtjcaidan_ys1").removeClass();
+				$("#sjtjcaidan_ys2").removeClass();
+				$("#sjtjcaidan_ys3").removeClass();
+				$("#sjtjcaidan_ys4").removeClass();
+
+				$("#sjtjcaidan_ys1").addClass("card sjtjcaidan_ys_on");
+				$("#sjtjcaidan_ys2").addClass("card sjtjcaidan_ys");
+				$("#sjtjcaidan_ys3").addClass("card sjtjcaidan_ys");
+				$("#sjtjcaidan_ys4").addClass("card sjtjcaidan_ys");
+
+			});
+			
+			$('#sjtjcaidan_ys2').click(function(){
+		
+				ym1.style.display ="none";
+				ym2.style.display ="block";
+				ym3.style.display ="none";
+				ym4.style.display ="none";
+
+				$("#sjtjcaidan_ys1").removeClass();
+				$("#sjtjcaidan_ys2").removeClass();
+				$("#sjtjcaidan_ys3").removeClass();
+				$("#sjtjcaidan_ys4").removeClass();
+
+				$("#sjtjcaidan_ys1").addClass("card sjtjcaidan_ys");
+				$("#sjtjcaidan_ys2").addClass("card sjtjcaidan_ys_on");
+				$("#sjtjcaidan_ys3").addClass("card sjtjcaidan_ys");
+				$("#sjtjcaidan_ys4").addClass("card sjtjcaidan_ys");
+			});
+
+			$('#sjtjcaidan_ys3').click(function(){
+
+				ym1.style.display ="none";
+				ym2.style.display ="none";
+				ym3.style.display ="block";
+				ym4.style.display ="none";
+
+				$("#sjtjcaidan_ys1").removeClass();
+				$("#sjtjcaidan_ys2").removeClass();
+				$("#sjtjcaidan_ys3").removeClass();
+				$("#sjtjcaidan_ys4").removeClass();
+
+				$("#sjtjcaidan_ys1").addClass("card sjtjcaidan_ys");
+				$("#sjtjcaidan_ys2").addClass("card sjtjcaidan_ys");
+				$("#sjtjcaidan_ys3").addClass("card sjtjcaidan_ys_on");
+				$("#sjtjcaidan_ys4").addClass("card sjtjcaidan_ys");
+			});
+
+			$('#sjtjcaidan_ys4').click(function(){
+
+				ym1.style.display ="none";
+				ym2.style.display ="none";
+				ym3.style.display ="none";
+				ym4.style.display ="block";
+
+				$("#sjtjcaidan_ys1").removeClass();
+				$("#sjtjcaidan_ys2").removeClass();
+				$("#sjtjcaidan_ys3").removeClass();
+				$("#sjtjcaidan_ys4").removeClass();
+
+				$("#sjtjcaidan_ys1").addClass("card sjtjcaidan_ys");
+				$("#sjtjcaidan_ys2").addClass("card sjtjcaidan_ys");
+				$("#sjtjcaidan_ys3").addClass("card sjtjcaidan_ys");
+				$("#sjtjcaidan_ys4").addClass("card sjtjcaidan_ys_on");
+			});
+		});
+		
+	
+</script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart1 = echarts.init(document.getElementById('chart1'));
+
+        myChart1.setOption({
+        	legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['六级通过（包括四级)','仅四级通过','都未通过'],
+                textStyle: {
+      				color: "#FFFFFF",
+      				fontSize: 20
+    			}
+            },
+            series : [
+                {
+					label:{
+						color:"#FFFFFF",
+						fontSize: 20
+					},
+                	color: ['rgba(256,256,256,1)','rgba(256,256,256,0.7)','rgba(256,256,256,0.4)'],
+                    name: '访问来源',
+                    type: 'pie',    // 设置图表类型为饼图
+                    radius: '55%',  // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
+                    data:[          // 数据数组，name 为数据项名称，value 为数据项值
+                        {value:235, name:'六级通过（包括四级)'},
+                        {value:274, name:'仅四级通过'},
+                        {value:310, name:'都未通过'},
+                    ],
+                    itemStyle: {
+                		normal: {
+                    	shadowBlur: 200,
+                    	shadowColor: 'rgba(0, 0, 0, 0.3)'
+                		}
+            		},
+            		emphasis: {
+            			itemStyle: {
+                			// 高亮时点的颜色
+                			color: '#468B38'
+            			}
+
+        			}
+                }
+            ]
+        })
+
+
+    </script>
+
+	<script type="text/javascript">
+
+		var myChart2 = echarts.init(document.getElementById('chart2'));
+		var seriesLabel = {
+			normal: {
+				show: true,
+				textBorderColor: '#333',
+				textBorderWidth: 2
+			}
+		};
+
+		myChart2.setOption({
+			title: {
+				text: '绩点分布',
+                textStyle: {
+      				color: "#FFFFFF",
+      				fontSize: 20
+    			}
+			},
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'shadow'
+				}
+			},
+			legend: {
+				data: ['绩点2.0以下', '绩点2.0~3.0', '绩点3.0~4.0', '绩点4.0以上'],
+				textStyle: {
+      				color: "#FFFFFF",
+      				fontSize: 20
+    			}
+			},
+			grid: {
+				left: 100
+			},
+			toolbox: {
+				show: true,
+				feature: {
+					saveAsImage: {}
+				}
+			},
+			xAxis: {
+				type: 'value',
+				name: '人数',
+				axisLabel: {
+					formatter: '{value}'
+				}
+			},
+			yAxis: {
+				type: 'category',
+				inverse: true,
+				data: ['5班', '6班', '7班','8班'],
+				axisLabel: {
+					formatter: function (value) {
+						return value;
+					},
+					margin: 20
+				},
+				nameTextStyle: {
+				  color: "#FFFFFF"
+				}
+			},
+			series: [
+				{
+					color: ['rgba(256,256,256,1)'],
+					name: '绩点2.0以下',
+					type: 'bar',
+					data: [5, 3, 6, 5],
+					label: seriesLabel,
+					markPoint: {
+						symbolSize: 1,
+						symbolOffset: [0, '50%'],
+						label: {
+							formatter: '{a|{a}\n}{b|{b} }{c|{c}}',
+							backgroundColor: 'rgb(242,242,242)',
+							borderColor: '#aaa',
+							borderWidth: 1,
+							borderRadius: 4,
+							padding: [4, 10],
+							lineHeight: 26,
+							// shadowBlur: 5,
+							// shadowColor: '#000',
+							// shadowOffsetX: 0,
+							// shadowOffsetY: 1,
+							position: 'right',
+							distance: 20,
+							rich: {
+								a: {
+									align: 'center',
+									color: '#fff',
+									fontSize: 18,
+									textShadowBlur: 2,
+									textShadowColor: '#000',
+									textShadowOffsetX: 0,
+									textShadowOffsetY: 1,
+									textBorderColor: '#333',
+									textBorderWidth: 2
+								},
+								b: {
+									color: '#333'
+								},
+								c: {
+									color: '#ff8811',
+									textBorderColor: '#000',
+									textBorderWidth: 1,
+									fontSize: 22
+								}
+							}
+						}
+
+					}
+				},
+				{
+					color: ['rgba(256,256,256,0.8)'],
+					name: '绩点2.0~3.0',
+					type: 'bar',
+					label: seriesLabel,
+					data: [14, 15, 14, 17]
+				},
+				{
+					color: ['rgba(256,256,256,0.6)'],
+					name: '绩点3.0~4.0',
+					type: 'bar',
+					label: seriesLabel,
+					data: [10, 11, 9, 7]
+				},
+				{
+					color: ['rgba(256,256,256,0.4)'],
+					name: '绩点4.0以上',
+					type: 'bar',
+					label: seriesLabel,
+					data: [1, 1, 1, 1]
+				}
+			]
+        })
+
+	</script>
+
+</body>
+</html>

@@ -209,6 +209,36 @@ a:hover{
 
 /* Manager CSS */
 
+/* teacher CSS */
+
+.sjtjcaidan_ys{
+    border-radius:20px;
+    height:20%;
+    color:#FFFFFF;
+    font-size:20px;
+    text-align:center;
+    padding:10px;
+}
+
+.sjtjcaidan_ys:hover{
+    transform: translate(20px,0px);
+	box-shadow:0px 1px 30px 1px rgba(0,0,0,.2);
+	background:#4d993d;
+
+}
+
+.sjtjcaidan_ys_on{
+    border-radius:20px;
+    height:20%;
+    color:#FFFFFF;
+    font-size:20px;
+    text-align:center;
+    padding:10px;
+    background-color:rgba(0,0,0,.4);
+}
+
+/* teacher CSS */
+
 
 @media screen and (max-width: 1700px){
 	.daohangcaidan{
