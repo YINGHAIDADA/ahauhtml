@@ -39,6 +39,18 @@
 > >上传下载
 > >
 > >数据统计
+## 页面展示
+
+> ![数据统计-图表1](https://s3.ax1x.com/2020/12/06/DjlMRg.png)
+> 
+> ![数据统计-图表2](https://s3.ax1x.com/2020/12/06/DjlKJS.png)
+> 
+> ![材料提交](https://s3.ax1x.com/2020/12/06/Djl6dx.png)
+> 
+> ![发布公示](https://s3.ax1x.com/2020/12/06/Djlye1.png)
+> 
+> ![首页](https://s3.ax1x.com/2020/12/06/DjlrLR.png)
+
 
 ## 技术总结
 * Python语言

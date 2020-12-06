@@ -59,8 +59,8 @@ a:hover{
 	color: #FFFFFF;
 	font-size: 30px;
 	cursor:pointer;
-	transition: transform 0.5s,background 0.5s;
-	-webkit-transition:background 0.5s,-webkit-transform 0.5s; /* Safari */
+	transition: transform 0.5s;
+	-webkit-transition:-webkit-transform 0.5s; /* Safari */
 	//box-shadow:1px 0px 50px 1px #346729;
 }
 
