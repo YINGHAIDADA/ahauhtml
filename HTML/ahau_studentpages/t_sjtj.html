@@ -34,7 +34,7 @@
 		<button type="submit" id="sjtjcaidan_ys4" class="card sjtjcaidan_ys">页面4</button>
 	</div>
 
-	<div id="sjtjym1" class="card" style="padding:10px;border-radius:20px;width: 80%;float: right;display: none;height: 100%">
+	<div id="sjtjym1" class="card" style="padding:10px;border-radius:20px;width: 80%;float: right;display: none;height: 100%;">
 		<div id="chart1" style="width: 900px;height:600px;"></div>
 
 	</div>
@@ -179,7 +179,7 @@
             		emphasis: {
             			itemStyle: {
                 			// 高亮时点的颜色
-                			color: '#468B38'
+                			color: 'rgba(109,75,249,.8)'
             			}
 
         			}
@@ -212,7 +212,10 @@
 			tooltip: {
 				trigger: 'axis',
 				axisPointer: {
-					type: 'shadow'
+					type: 'shadow',
+					shadowStyle:{
+						color: "rgba(109,75,249,.2)"
+					}
 				}
 			},
 			legend: {
