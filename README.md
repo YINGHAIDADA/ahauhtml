@@ -3,7 +3,7 @@
 本来只是静态的网页设计，后来我自己希望能尝试学习进行一个完整的服务器搭建
 所以开设了这个项目
 
-**Gitee：** https://gitee.com/yinghaidada/ahauhtml
+**Gitee：** https://gitee.com/yinghaidada/ahauhtml  
 **GitHub：** https://github.com/YINGHAIDADA/ahauhtml 
 
 ## Internet作业进度
