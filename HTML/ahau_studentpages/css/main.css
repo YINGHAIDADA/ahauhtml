@@ -11,6 +11,9 @@ a:hover{
 	color: #FFFFFF;
 	text-decoration: none;
 }
+::-webkit-input-placeholder {
+    font-size: 18px;
+}
 /* Student CSS */
 .form-control option{
 	border-radius: 10px;
