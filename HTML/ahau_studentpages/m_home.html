@@ -3,15 +3,70 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>班级管理员-主页</title>
+<style>
+  #animation_container {
+  margin:auto;
+	margin-top:-180px;
+	margin-bottom:-180px;
+	left:0;right:0;
+	top:0;bottom:0;
+  }
+</style>
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/app-style.css" />
 <link rel="stylesheet" href="css/main.css" />
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script src="js/createjs-2015.11.26.min.js"></script>
+<script src="js/公平.js"></script>
+
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("ABEDDEAADE10C24D8BD552AE5B79C47F");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.无标题1();
+	stage = new lib.Stage(canvas);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+
 </head>
 
-<body>
+<body onload="init();">
 	<div class="header">
 		<div class="header_logo">
 			<img src="images/logo.png" alt="" />
@@ -32,24 +87,24 @@
 			</div>
 			<div class="xinxi_xiangxi card" style="margin-top:10px;height:60%">
 				<form action="" name="banjixinxi">
-				<table width="400" border="1" style="border-radius: 10px" class="liebiao">
+				<table width="400" border="0" style="border-radius: 10px" class="liebiao">
   <tbody>
     <tr>
-      <td width="60" style="background:#468B38;">学院：</td>
+      <td width="60" style="background:#468B38;border-radius:10px 10px 10px 10px;text-align:center">学院：</td>
       <td width="110">信息与计算机学院</td>
-      <td width="50" style="background:#468B38;">专业：</td>
+      <td width="50" style="background:#468B38;border-radius:10px 10px 10px 10px;text-align:center">专业：</td>
       <td width="100">计算机科学与技术</td>
     </tr>
     <tr>
-      <td style="background:#468B38;">班级：</td>
+      <td style="background:#468B38;border-radius:10px 10px 10px 10px;text-align:center">班级：</td>
       <td>6班</td>
-      <td style="background:#468B38;">辅导员：</td>
+      <td style="background:#468B38;border-radius:10px 10px 10px 10px;text-align:center">辅导员：</td>
       <td>赵宇</td>
     </tr>
     <tr>
-      <td style="background:#468B38;">男生人数：</td>
+      <td style="background:#468B38;border-radius:10px 10px 10px 10px;text-align:center">男生人数：</td>
       <td>20</td>
-      <td style="background:#468B38;">女生人数：</td>
+      <td style="background:#468B38;border-radius:10px 10px 10px 10px;text-align:center">女生人数：</td>
       <td>10</td>
     </tr>
    
@@ -72,7 +127,12 @@
 			公正，
 			公开
 			</h2>
+			<div id="animation_container" style="background-color:rgba(0, 0, 0, 0.00); width:640px; height:480px">
+				<canvas id="canvas" width="640" height="480" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+				<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:640px; height:480px; position: absolute; left: 0px; top: 0px; display: block;">
+				</div>
 			</div>
+		  </div>
 		</div>
 		
 	</div>
