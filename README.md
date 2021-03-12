@@ -9,6 +9,7 @@
 ## Internet作业进度
 
 > **登录页面**
+>
 > > Login
 >
 > **学生页面**
@@ -24,7 +25,7 @@
 > > 留信
 >
 > **班级管理者界面**
-> 
+>
 > > 首页
 > >
 > > 综测评审
@@ -34,9 +35,9 @@
 > > 发布公告
 > >
 > > 回复留言
-> 
+>
 > **老师界面**
-> 
+>
 > >审核公示
 > >
 > >上传下载
@@ -44,15 +45,15 @@
 > >数据统计
 ## 页面展示
 
-> ![数据统计-图表1](https://s3.ax1x.com/2020/12/07/Dv1vJf.png)
+> ![数据统计-图表1](showImages/sjtj1.png)
 > 
-> ![数据统计-图表2](https://s3.ax1x.com/2020/12/07/Dv1jFP.png)
+> ![数据统计-图表2](showImages/sjtj2.png)
 > 
-> ![材料提交](https://s3.ax1x.com/2020/12/07/Dv3ies.png)
+> ![材料提交](showImages/cltj.png)
 > 
-> ![发布公示](https://s3.ax1x.com/2020/12/07/Dv3koq.png)
+> ![发布公示](showImages/fbgs.png)
 > 
-> ![首页](https://s3.ax1x.com/2020/12/07/Dv3Fwn.png)
+> ![首页](showImages/home.png)
 
 
 ## 技术总结
